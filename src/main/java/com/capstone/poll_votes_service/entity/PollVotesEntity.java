@@ -14,21 +14,21 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @Data
 @Entity
-@Table(name="poll_votes")
+@Table(name = "poll_votes")
 public class PollVotesEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name="poll_vote_id")
+    @Column(name = "poll_vote_id")
     private int pollVoteId;
 
-    @Column(name="email")
+    @Column(name = "email")
     private String email;
 
-    @Column(name="poll_id")
+    @Column(name = "poll_id")
     private int pollId;
 
-    @Column(name="user_vote")
-    private int userVote;
+    @Column(name = "user_vote")
+    private String votedEmail;
 
 }

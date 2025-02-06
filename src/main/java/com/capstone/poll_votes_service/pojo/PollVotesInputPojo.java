@@ -7,10 +7,8 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class PollVotesPojo {
-    private int pollVoteId;
-    private String email;
-    private int pollId;
-    private String votedEmail;
-
+public class PollVotesInputPojo {
+    int pollId;
+    String email;
+    String votedEmail;
 }
